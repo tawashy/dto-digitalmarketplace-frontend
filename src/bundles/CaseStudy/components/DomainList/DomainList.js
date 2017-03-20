@@ -146,7 +146,7 @@ class DomainList extends BaseForm {
 
               {!isEmpty(essential) &&
                 <div>
-                  <h2>Essential</h2>
+                  {!isEmpty(recommended) && <h2>Essential</h2>}
                   <strong>{leftToAddCount === 0 ?
                     'All services have a case study':
                       (leftToAddCount === 1 ?
